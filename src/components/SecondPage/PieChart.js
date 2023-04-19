@@ -12,7 +12,7 @@ const PieChart = () => {
         data: [55, 31, 14],
         backgroundColor: ["#98D89E", "#F6DC7D", "#EE8484"],
         hoverBackgroundColor: ["#98D81A", "#F6D123", "#EE7218"],
-        borderWidth: 0
+        borderWidth: 0,
       },
     ],
   };
@@ -29,7 +29,10 @@ const PieChart = () => {
         display: true,
         position: "right",
         labels: {
-          boxWidth: 8,
+          usePointStyle: true,
+          boxWidth: 5,
+          boxHeight: 5,
+        
         },
       },
     },

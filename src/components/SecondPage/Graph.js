@@ -36,6 +36,7 @@ const Graph = () => {
         pointStrokeColor: "#FFFFFF",
         lineTension: 0.4,
         radius: 6,
+        pointRadius: 0,
       },
       {
         label: "Guest",
@@ -45,6 +46,7 @@ const Graph = () => {
         pointStrokeColor: "#FFFFFF",
         lineTension: 0.4,
         radius: 6,
+        pointRadius: 0,
       },
     ],
   };
@@ -74,11 +76,12 @@ const Graph = () => {
         enabled: false,
       },
       legend: {
-        display: true,
         position: "top",
+        align: "end",
         labels: {
-          boxWidth: 4,
-          pointStyle: "circle"
+          usePointStyle: true,
+          boxWidth: 5,
+          boxHeight: 5,
         },
       },
     },
